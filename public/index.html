@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Typescript] Finance App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="navbar">
+                <h1>Finance Logger</h1>
+            </div>
+        </div>
+    </nav>
+    <div class="main-content">
+        <div class="container content">
+            <aside class="add-form">
+                <form class="new-item-form">
+                    <div class="input-field">
+                        <label for="type">Type</label>
+                        <select id="type">
+                            <option value="invoice">Invoice</option>
+                            <option value="payment">Payment</option>
+                        </select>
+                    </div>
+                    <div class="input-field">
+                        <label id="name-label" for="name">Client</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="input-field">
+                        <label for="details">Details</label>
+                        <input type="text" id="details">
+                    </div>
+                    <div class="input-field">
+                        <label for="amount">Amount</label>
+                        <input type="number" id="amount">
+                    </div>
+                    <button>Add</button>
+                </form>
+            </aside>
+    
+            <section class="list">
+                <h2>List</h2>
+                <ul class="finance-list">
+                </ul>
+            </section>
+        </div>
+       
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
